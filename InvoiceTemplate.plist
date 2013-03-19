@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>All Template</key>
+	<array>
+		<dict>
+			<key>ReceiverName</key>
+			<string>30,50,433,30</string>
+			<key>Address</key>
+			<string>30,80,433,30</string>
+			<key>Email</key>
+			<string>30,110,433,30</string>
+			<key>Date</key>
+			<string>30,140,433,30</string>
+			<key>TotalHours</key>
+			<string>30,170,433,30</string>
+			<key>TripCharge</key>
+			<string>30,200,445,30</string>
+			<key>Product</key>
+			<array>
+				<dict>
+					<key>Discount</key>
+					<string>393,448,115,32</string>
+					<key>Sales Price</key>
+					<string>500,448,100,32</string>
+					<key>Quantity</key>
+					<string>270,448,115,32</string>
+					<key>Price</key>
+					<string>155,448,115,32</string>
+					<key>Name</key>
+					<string>40,448,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,408,115,32</string>
+					<key>Sales Price</key>
+					<string>500,408,100,32</string>
+					<key>Quantity</key>
+					<string>270,408,115,32</string>
+					<key>Price</key>
+					<string>155,408,115,32</string>
+					<key>Name</key>
+					<string>40,408,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,488,115,32</string>
+					<key>Sales Price</key>
+					<string>500,488,100,32</string>
+					<key>Quantity</key>
+					<string>270,488,115,32</string>
+					<key>Price</key>
+					<string>155,488,115,32</string>
+					<key>Name</key>
+					<string>40,488,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,528,115,32</string>
+					<key>Sales Price</key>
+					<string>500,528,100,32</string>
+					<key>Quantity</key>
+					<string>270,528,115,32</string>
+					<key>Price</key>
+					<string>155,528,115,32</string>
+					<key>Name</key>
+					<string>40,528,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,568,115,32</string>
+					<key>Sales Price</key>
+					<string>500,568,100,32</string>
+					<key>Quantity</key>
+					<string>270,568,115,32</string>
+					<key>Price</key>
+					<string>155,568,115,32</string>
+					<key>Name</key>
+					<string>40,568,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,608,115,32</string>
+					<key>Sales Price</key>
+					<string>500,608,100,32</string>
+					<key>Quantity</key>
+					<string>270,608,115,32</string>
+					<key>Price</key>
+					<string>155,608,115,32</string>
+					<key>Name</key>
+					<string>40,608,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,648,115,32</string>
+					<key>Sales Price</key>
+					<string>500,648,100,32</string>
+					<key>Quantity</key>
+					<string>270,648,115,32</string>
+					<key>Price</key>
+					<string>155,648,115,32</string>
+					<key>Name</key>
+					<string>40,648,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,688,115,32</string>
+					<key>Sales Price</key>
+					<string>500,688,100,32</string>
+					<key>Quantity</key>
+					<string>270,688,115,32</string>
+					<key>Price</key>
+					<string>155,688,115,32</string>
+					<key>Name</key>
+					<string>40,688,115,32</string>
+				</dict>
+				<dict>
+					<key>Discount</key>
+					<string>393,728,115,32</string>
+					<key>Sales Price</key>
+					<string>500,728,100,32</string>
+					<key>Quantity</key>
+					<string>270,728,115,32</string>
+					<key>Price</key>
+					<string>155,728,115,32</string>
+					<key>Name</key>
+					<string>40,728,115,32</string>
+				</dict>
+			</array>
+			<key>TotalAmount</key>
+			<string>510,806,100,30</string>
+			<key>TripAmount</key>
+			<string>30,230,433,30</string>
+			<key>CustomerEmail</key>
+			<string>475,200,144,20</string>
+			<key>CustomerAddress</key>
+			<string>475,180,144,20</string>
+			<key>CustomerName</key>
+			<string>438,160,168,20</string>
+			<key>CompanyContactNo</key>
+			<string>39,220,257,20</string>
+			<key>CompanyEmail</key>
+			<string>39,200,257,20</string>
+			<key>CompanyAddress</key>
+			<string>39,180,257,20</string>
+			<key>CompnayName</key>
+			<string>39,160,257,20</string>
+			<key>Background</key>
+			<string>1.png</string>
+			<key>Invoice_id</key>
+			<string>1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,229 @@
+
+<html>
+
+<head>
+    <meta name="viewport" id="view" content="width=320px, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+
+            body			{font-family: Verdana, Geneva, sans-serif; font-size:11px; padding:10px; margin:0; }
+            .linebottom 	{ border-bottom:1px solid #CCC;}
+			.linetop 		{ border-top:1px solid #CCC;}
+			h1, h2, h3, h4, h5, h6 { color: #069;}
+			.Label			{background-color: #CCC;}
+			.TextBox		{background-color:#ECECEC;}
+            .headers
+			.myCompany		{ float: left;font-size: smaller;margin-top: -20px;}
+			
+            .header
+			.otherCompany	{float: right;padding: 15px;font-size: smaller;}
+			
+            .content		{margin-top: 10px;padding: 30px 0 0 0;}
+            table			{ width: 100%;}
+            tr th			{ color: gray; border-bottom: 1px solid lightgray;}
+            tr th, tr td	{ font-size:12px; }
+            td				{}
+			.footer			{font-size: 12px;padding: 20px;margin: 0;text-align: right;}
+            
+            
+
+        </style>
+
+    </head>
+
+    <body>
+
+      
+        
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td>
+        {{#documentHeader}}
+        Working App
+        {{/documentHeader}}
+
+        </td>
+      </tr>
+      <tr>
+        <td>{{#pageContent}} </td>
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="25%" align="right" >Date: {{InvoiceNumber}}</td>
+          </tr>
+          <tr>
+            <td width="25%" align="right" >Invoice No. {{InvoiceNumber}}</td>
+          </tr>
+           <tr>
+            <td width="25%" align="right" class="linebottom" >Purchase Order No. {{InvoiceNumber}}</td>
+          </tr>
+
+        </table>
+      </tr>
+        
+        <tr>
+         <td width="25%" align="right" class="linebottom" ></td>
+        </tr>
+
+      <tr>
+        <td><table width="100%" border="0" cellspacing="2" cellpadding="8">
+          <tr>
+            <td colspan="6"><h1>{{companyName}}</h1></td>
+          </tr>
+          <tr>
+            <td class="Label"><strong>Address</strong></td>
+            <td colspan="5" class="TextBox">{{companyAddress}}</td>
+          </tr>
+          <tr>
+            <td width="15%" class="Label"><strong>City</strong></td>
+            <td width="25%" class="TextBox">{{companyCity}}</td>
+            <td width="10%" class="Label"><strong>State</strong></td>
+            <td width="20%" class="TextBox">{{companyState}}</td>
+            <td width="10%" class="Label"><strong>Zip</strong></td>
+            <td width="20%" class="TextBox">{{companyZip}}</td>
+          </tr>
+          <tr>
+            <td colspan="6" class="linebottom">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="2" cellpadding="8">
+          <tr>
+            <td colspan="6"><h4>{{customerName}}</h4></td>
+          </tr>
+          <tr>
+            <td class="Label"><strong>Address</strong></td>
+            <td colspan="5" class="TextBox">{{companyAddress}}</td>
+          </tr>
+          <tr>
+            <td width="15%" class="Label"><strong>City</strong></td>
+            <td width="25%" class="TextBox">{{companyCity}}</td>
+            <td width="10%" class="Label"><strong>State</strong></td>
+            <td width="20%" class="TextBox">{{companyState}}</td>
+            <td width="10%" class="Label"><strong>Zip</strong></td>
+            <td width="20%" class="TextBox">{{companyZip}}</td>
+          </tr>
+          <tr>
+            <td colspan="6" class="linebottom">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="Label"><strong>Job Description</strong></td>
+            <td colspan="5" class="TextBox">{{jobdesc}}</td>
+          </tr>
+			<tr>
+            <td colspan="6" class="linetop linebottom">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table cellpadding="8" cellspacing='2'>
+          <tr>
+            <td colspan="4" align="left"><h4>Parts Information                                                   </h4>            
+          </tr>
+          <tr class="Label">
+            <td align="center"><strong>Part Name
+            </th>
+            </strong>
+            <td align="center"><strong>Part Quantity
+            </th>
+            </strong>
+            <td align="center"><strong>Unit Price
+            </th>
+            </strong>
+            <td align="center"><strong>Total Price
+            </th>
+          </strong></tr>
+
+        {{#partsarray}}
+
+          <tr>
+            <td align="center">{{PartName}}</td>
+            <td align="center">{{Quantity}}</td>
+            <td align="center">{{unitPrice}}</td>
+            <td align="center">{{addValues}}</td>
+          </tr>
+           {{/partsarray}}
+           
+  <tr>
+    <td colspan="4" class="linebottom">&nbsp;</td>
+  </tr>
+     
+        </table>
+          <table width="100%" border="0" cellspacing="2" cellpadding="8">
+            <tr>
+              <td width="75%" class="linebottom">&nbsp;</td>
+              <td width="25%" align="center" class="linebottom TextBox" ><strong>Total Amount</strong> {{partAmount}}</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table cellpadding="8" cellspacing='2'>
+          <tr>
+            <td colspan="4" align="left"><h4>Time on Job</h4>
+          </tr>
+          <tr class="Label">
+            <td align="center"><strong>Tour Start</strong>
+            <td align="center"><strong>Tour End</strong>
+            <td align="center"><strong>No. of Hours</strong>
+          </tr>
+
+               {{#tripsarray}}
+                      <tr>
+                        <td align="center">{{startTime}}</td>
+                        <td align="center">{{EndTime}}</td>
+                        <td align="center">{{tNumberOfHour}}</td>
+                      </tr>
+             {{/tripsarray}}
+          <tr>
+            <td colspan="4" class="linebottom">&nbsp;</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="2" cellpadding="8">
+            <tr>
+              <td width="75%" class="linebottom" >&nbsp;</td>
+              <td width="25%" align="center" class="linebottom TextBox"><strong>Total Amount</strong> {{TripsAmount}}</td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="2" cellpadding="8">
+            <tr>
+              <td width="75%" class="linebottom">&nbsp;</td>
+              <td width="25%" align="center" class="Label" ><strong>Grand Total</strong> {{GrandTotal}}</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="2" cellpadding="20">
+          <tr>
+            <td width="50%" align="left" class="Label" ><strong>Signature</strong></td>
+            
+            <td width="25%" class="TextBox"><img src='{{RecSignImage}}' width="250" height="100" /></td>
+            <td width="25%" class="TextBox"><img src='{{senderSignImage}}' width="250" height="100" /></td>
+            
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td width="25%" align="center" class="linebottom">
+        <FONT COLOR="#6D7B8D">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Some RED text</FONT></td>
+      </tr>
+      <tr>
+        <td>{{/pageContent}}</td>
+      </tr>
+      <tr>
+        <td>
+        
+        {{#pageFooter}}
+		
+        
+        {{/pageFooter}}   
+        
+        </td>
+      </tr>
+    </table>   
+
+    </body>
+
+</html>
