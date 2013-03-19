@@ -1,0 +1,11 @@
+Nice to have:
+- document migration path from all previous versions to latest version
+
+Missing tests:
+- test mustacheTag:didRenderObject:as:
+- test mustacheTag:didFailRenderingObject:withError:
+
+Experiments:
+- {{.}}, {{..}}, {{...}}, {{.name}}, {{..name}}, {{...name}}, {{ROOT}}, {{ROOT.name}}
+- Have filters put something in the scope: in `{{ dateFormat(date, ISO_8601) }}`, ISO_8601 would be defined by the dateFormat filter.
+- date/time formatter: `{{ dateFormat(date, Short) }}`, `{{ timeFormat(date, Short) }}`, `{{ dateTimeFormat(date, Short, Full) }}`
